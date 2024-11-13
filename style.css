@@ -1,0 +1,132 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+  }
+
+.image-container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+
+.container .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.container .heading h2{
+   font-size: 1.6rem;
+   font-weight: 500;
+   text-align: center;
+}
+
+.container .heading p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -10px;
+}
+
+.media-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.media-buttons a{
+    font-size: 1.6rem;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.button-group button{
+    width: 130px;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+    background-color: #4070f4;
+    color:#f4f4f4;
+}
+
+.analytics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 260px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 60px;
+}
+
+.line{
+    height: 20px;
+    width: 2px;
+    background-color: #ccc;
+}
